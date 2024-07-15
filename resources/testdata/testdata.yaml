@@ -1,3 +1,11 @@
 email: 
 valid_password: 
 invalid_password: 
+
+new_email: 
+old_email: 
+first_name: 
+last_name: 
+phone_number: 
+new_password: 
+confirm_password: 
