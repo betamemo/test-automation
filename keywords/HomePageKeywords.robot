@@ -4,9 +4,9 @@ Resource    CommonKeywords.robot
 
 
 *** Keywords ***
-future skill should display home page and display message as "${expected_message}"
-    CommonKeywords.Wait until page contains element then verify text    ${expected_message}
+Futureskill should display homepage and greeting message as "${expected_message}"
+    CommonKeywords.Wait until page contains element then verify message    ${expected_message}
 
-user logout from future skill platform
+User logout from futureskill
     CommonKeywords.Wait until element is ready then click element    xpath=//button[@aria-haspopup="menu"]
     CommonKeywords.Wait until element is ready then click element    xpath=//div[contains(text(),"ออกจากระบบ")]

@@ -10,11 +10,11 @@ Suite Teardown      Close Browser
 
 
 *** Test Cases ***
-As a user, I want to login success with valid credential
-    When user login to future skill platform with ${email} and ${valid_password}
-    Then future skill should display home page and display message as "สวัสดี"
-    [Teardown]    user logout from future skill platform
+As a user, I can login with a valid password
+    When User login to futureskill with ${email} and ${valid_password}
+    Then Futureskill should display homepage and greeting message as "สวัสดี"
+    [Teardown]    User logout from futureskill
 
-As a user, I fail to login with invalid credential
-    When user login to future skill platform with ${email} and ${invalid_password}
-    Then future skill should display display validate login fail message as "กรอกรหัสผ่านไม่ถูกต้อง"
+As a user, I cannot login with an invalid password
+    When User login to futureskill with ${email} and ${invalid_password}
+    Then Futureskill should display the login failure validation message as "กรอกรหัสผ่านไม่ถูกต้อง"
